@@ -12,8 +12,7 @@ public class JustePrix {
 
     public int nombreATrouver(){
         Random random = new Random();
-        int nombre = random.nextInt(100);
-        return nombre;
+        return random.nextInt(100);
     }
 
     public void nombreDeVie(){
@@ -27,7 +26,7 @@ public class JustePrix {
 
     public void jeux(){
         int nombreRecherchePourLaPartie = nombreATrouver();
-        while (partie == true) {
+        while (partie) {
             tentative(nombreRecherchePourLaPartie);
         }
     }
